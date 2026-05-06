@@ -1,3 +1,4 @@
+/* assets/js/main.js */
 /**
  * Care At Home - Core Application Logic
  * Modular vanilla JavaScript for DOM interactions.
@@ -24,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Sticky Header Enhancement ---
-    // Adds a visual shadow to the navbar when the user scrolls down
+    // --- Premium Sticky Header Enhancement ---
+    // Adds a soft, wide visual shadow to the navbar when the user scrolls down
     const header = document.getElementById('main-header');
     
     if (header) {

@@ -1,9 +1,10 @@
+/* assets/css/style.css */
 /* ==========================================================================
    Care At Home - Core Stylesheet
    ========================================================================== */
 
 /* Import Google Fonts directly into CSS to clean up HTML head */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 
 /* Base Enhancements */
 html {
@@ -35,7 +36,8 @@ body {
     background: #94a3b8; /* Tailwind slate-400 */
 }
 
-/* Utility Class for dynamically added sticky shadows */
+/* Premium Sticky Header Shadow applied via JS */
 .header-scrolled {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px -10px rgba(3, 105, 161, 0.08);
+    border-bottom-color: transparent !important;
 }
