@@ -23,7 +23,7 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/services">Services</Link></li>
-            <li><Link to="/medical-equipment-rental">Equipment Rental</Link></li>
+            <li><Link to="/services/medical-equipment-rental">Equipment Rental</Link></li>
             <li><Link to="/locations">Locations</Link></li>
             <li><Link to="/reviews">Reviews</Link></li>
             <li><Link to="/blog">Blog</Link></li>

@@ -9,7 +9,7 @@ const MobileMenu = ({ closeMenu }) => {
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
           <li><Link to="/services" onClick={closeMenu}>All Services</Link></li>
-          <li><Link to="/medical-equipment-rental" onClick={closeMenu}>Medical Equipment on Rent</Link></li>
+          <li><Link to="/services/medical-equipment-rental" onClick={closeMenu}>Medical Equipment on Rent</Link></li>
           <li><Link to="/locations" onClick={closeMenu}>Locations</Link></li>
           <li><Link to="/reviews" onClick={closeMenu}>Reviews</Link></li>
           <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
