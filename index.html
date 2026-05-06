@@ -436,70 +436,96 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-white border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-start">
+    <!-- Premium Contact Section -->
+    <section id="contact" class="py-24 bg-white relative border-b border-slate-100">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-50 z-0 hidden lg:block"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 
-                <div>
-                    <h2 class="text-primary font-bold tracking-wide uppercase text-sm mb-2">Get In Touch</h2>
-                    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 font-serif">Talk to Our Medical Coordinator</h3>
-                    <p class="text-lg text-slate-600 mb-10">We don't make you wait with contact forms. Call us directly or message on WhatsApp for immediate assistance regarding your patient's needs.</p>
-                    
-                    <div class="space-y-4 mb-10 border-b border-slate-100 pb-10">
-                        <a href="tel:+919430156190" class="w-full flex items-center justify-between p-5 bg-white border-2 border-primary rounded-xl hover:bg-primary hover:text-white group transition-all duration-300 shadow-sm">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-blue-50 text-primary rounded-full flex items-center justify-center text-xl group-hover:bg-white group-hover:text-primary transition-colors">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div class="text-left">
-                                    <p class="text-sm font-semibold text-slate-500 group-hover:text-blue-100">Call Us Anytime</p>
-                                    <p class="text-xl font-bold text-slate-900 group-hover:text-white">+91 94301 56190</p>
-                                </div>
+                <!-- Content & Actions -->
+                <div class="py-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-50 border border-red-100 mb-6">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                        </span>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-red-700">Immediate Response Team Active</span>
+                    </div>
+
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 font-serif tracking-tight">Speak to a Medical <br>Coordinator Today.</h2>
+                    <p class="text-lg text-slate-600 font-medium leading-relaxed mb-10">
+                        We prioritize your family's health. Bypass automated forms and connect directly with our clinical deployment team for immediate consultation and care planning.
+                    </p>
+
+                    <div class="space-y-5 mb-10">
+                        <!-- Premium Phone Action -->
+                        <a href="tel:+919430156190" class="flex items-center p-6 bg-slate-900 rounded-2xl hover:bg-slate-800 transition-colors shadow-lg group">
+                            <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-white text-2xl group-hover:scale-110 transition-transform duration-300">
+                                <i class="fa-solid fa-phone-volume"></i>
                             </div>
-                            <i class="fa-solid fa-arrow-right text-xl text-primary group-hover:text-white"></i>
+                            <div class="ml-5">
+                                <p class="text-sky-400 text-xs font-bold uppercase tracking-wider mb-1">24/7 Clinical Helpline</p>
+                                <p class="text-white text-2xl font-bold tracking-tight">+91 94301 56190</p>
+                            </div>
                         </a>
 
-                        <a href="https://wa.me/919430156190" target="_blank" class="w-full flex items-center justify-between p-5 bg-white border-2 border-[#25D366] rounded-xl hover:bg-[#25D366] hover:text-white group transition-all duration-300 shadow-sm">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-green-50 text-[#25D366] rounded-full flex items-center justify-center text-2xl group-hover:bg-white group-hover:text-[#25D366] transition-colors">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </div>
-                                <div class="text-left">
-                                    <p class="text-sm font-semibold text-slate-500 group-hover:text-green-50">Message on WhatsApp</p>
-                                    <p class="text-xl font-bold text-slate-900 group-hover:text-white">Start Chat</p>
-                                </div>
+                        <!-- Premium WhatsApp Action -->
+                        <a href="https://wa.me/919430156190" target="_blank" class="flex items-center p-6 bg-white border-2 border-slate-100 rounded-2xl hover:border-[#25D366] hover:shadow-md transition-all group">
+                            <div class="w-14 h-14 bg-[#25D366]/10 rounded-xl flex items-center justify-center text-[#25D366] text-3xl group-hover:bg-[#25D366] group-hover:text-white transition-colors duration-300">
+                                <i class="fa-brands fa-whatsapp"></i>
                             </div>
-                            <i class="fa-solid fa-arrow-right text-xl text-[#25D366] group-hover:text-white"></i>
+                            <div class="ml-5 flex-1">
+                                <p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">WhatsApp Consultation</p>
+                                <p class="text-slate-900 text-xl font-bold tracking-tight group-hover:text-[#25D366] transition-colors">Message Care Expert</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-slate-300 group-hover:text-[#25D366] transition-colors"></i>
                         </a>
                     </div>
 
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-700 flex-shrink-0 text-xl">
-                            <i class="fa-solid fa-location-dot"></i>
+                    <!-- Clinical Office Details -->
+                    <div class="flex items-start gap-5 pt-8 border-t border-slate-100">
+                        <div class="w-12 h-12 bg-sky-50 rounded-full flex items-center justify-center text-primary text-xl flex-shrink-0">
+                            <i class="fa-solid fa-hospital"></i>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold text-slate-900 mb-1">Visit Our Office</h4>
-                            <p class="text-slate-600 leading-relaxed font-medium">
-                                Care At Home<br>
+                            <h4 class="text-lg font-bold text-slate-900 mb-2 font-serif">Ranchi Care Headquarters</h4>
+                            <p class="text-slate-600 font-medium leading-relaxed text-sm">
                                 In front of Tribes India, Gate No. 5,<br>
-                                Ashok Nagar, Ranchi,<br>
-                                Jharkhand 834002
+                                Ashok Nagar, Ranchi, Jharkhand 834002
+                            </p>
+                            <p class="text-slate-500 text-xs font-semibold mt-3 flex items-center gap-1.5">
+                                <i class="fa-solid fa-clock text-primary"></i> Office Hours: 9:00 AM - 8:00 PM (Care is 24/7)
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="h-[500px] w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                <!-- Map & Trust Visual -->
+                <div class="relative h-[600px] lg:h-full min-h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white bg-slate-200 group">
+                    <!-- Overlay for premium feel -->
+                    <div class="absolute inset-0 bg-sky-900/5 pointer-events-none z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+                    
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14652.887258380315!2d85.314643!3d23.344005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e17e3f843d11%3A0xc6822a16d5ba596f!2sAshok%20Nagar%2C%20Ranchi%2C%20Jharkhand%20834002!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                        width="100%" 
-                        height="100%" 
+                        class="absolute inset-0 w-full h-full object-cover"
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
+
+                    <!-- Floating Trust/Directions Box -->
+                    <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-white/50 z-20 flex items-center justify-between">
+                        <div>
+                            <p class="font-bold text-slate-900 text-sm">Need Directions?</p>
+                            <p class="text-xs text-slate-500 font-medium mt-0.5">Navigate to our Ranchi office</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Ashok+Nagar,+Ranchi,+Jharkhand+834002" target="_blank" class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-sky-800 transition-colors shadow-md hover:-translate-y-0.5">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </a>
+                    </div>
                 </div>
 
             </div>
