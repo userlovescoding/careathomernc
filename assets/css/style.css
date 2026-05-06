@@ -41,3 +41,59 @@ body {
     box-shadow: 0 10px 30px -10px rgba(3, 105, 161, 0.08);
     border-bottom-color: transparent !important;
 }
+
+/* ==========================================================================
+   Premium Scroll Micro-Interactions
+   ========================================================================== */
+
+/* Base Reveal Up */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Base Reveal Fade (No translation, just soft fade) */
+.reveal-fade {
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity;
+}
+
+.reveal-fade.is-visible {
+    opacity: 1;
+}
+
+/* Subtle Image Parallax/Scale (For Hero & Map) */
+.image-parallax {
+    transform: scale(1.08);
+    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+}
+
+.image-parallax.is-visible {
+    transform: scale(1);
+}
+
+/* Stagger Delays for Grid Elements */
+.reveal-delay-100 { transition-delay: 100ms; }
+.reveal-delay-200 { transition-delay: 200ms; }
+.reveal-delay-300 { transition-delay: 300ms; }
+.reveal-delay-400 { transition-delay: 400ms; }
+
+/* Responsive adjustments to remove delays on mobile for faster perceived load */
+@media (max-width: 768px) {
+    .reveal-delay-100,
+    .reveal-delay-200,
+    .reveal-delay-300,
+    .reveal-delay-400 {
+        transition-delay: 0ms;
+    }
+}
