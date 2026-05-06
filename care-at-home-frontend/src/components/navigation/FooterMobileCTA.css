@@ -1,0 +1,25 @@
+/* Footer Mobile Enhancements - Included in Footer styling */
+@media (max-width: 768px) {
+  .footer-contact-section p {
+    margin-bottom: var(--space-4);
+  }
+  
+  /* Make phone numbers massive, easy tap targets on mobile */
+  .footer-mobile-tap-target {
+    display: block;
+    background-color: var(--clr-bg-main);
+    color: var(--clr-primary-dark);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: var(--space-2);
+    border: 1px solid var(--clr-border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .footer-mobile-tap-target.wa {
+    color: var(--clr-secondary-dark);
+  }
+}

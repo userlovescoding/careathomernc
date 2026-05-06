@@ -1,0 +1,40 @@
+.mobile-emergency-banner {
+  background-color: rgba(220, 38, 38, 0.08);
+  border-left: 4px solid var(--clr-emergency);
+  padding: var(--space-4);
+  margin: var(--space-4) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+@media (min-width: 769px) {
+  .mobile-emergency-banner {
+    display: none; /* Keep mobile focus */
+  }
+}
+
+.mobile-emergency-title {
+  color: var(--clr-emergency-dark);
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mobile-emergency-text {
+  font-size: 0.875rem;
+  color: var(--clr-text-main);
+  line-height: 1.5;
+}
+
+.mobile-emergency-link {
+  color: var(--clr-emergency-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}

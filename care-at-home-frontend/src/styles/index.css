@@ -1,0 +1,25 @@
+/* Care At Home - Global Design System */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Design Tokens */
+@import './variables.css';
+
+/* Structural Systems */
+@import './typography.css';
+@import './layout.css';
+@import './components.css';
+
+/* Responsive & Usability Enhancements */
+@import './responsive.css';
+
+/* Applied via Task 7.4: Final UI Consistency Audit */
+@import './audit-refinements.css';
+
+/* Applied via Task 8.3: Mobile UX Testing & Usability Validation */
+@import './mobile-ux-fixes.css';

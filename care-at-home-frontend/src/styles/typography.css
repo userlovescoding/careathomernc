@@ -1,0 +1,59 @@
+/* Global Typography Rules */
+body {
+  font-family: var(--font-sans);
+  color: var(--clr-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings Hierarchy */
+.heading-hero {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--clr-primary);
+  letter-spacing: -0.02em;
+}
+
+.heading-section {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--clr-primary-dark);
+}
+
+.heading-sub {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--clr-text-main);
+}
+
+/* Paragraphs & Support Text */
+.text-body {
+  font-size: 1rem;
+  color: var(--clr-text-main);
+}
+
+.text-body-large {
+  font-size: 1.125rem;
+  color: var(--clr-text-muted);
+  line-height: 1.7;
+}
+
+.text-small {
+  font-size: 0.875rem;
+  color: var(--clr-text-muted);
+}
+
+.text-faq {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--clr-text-main);
+}
+
+.text-cta {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}

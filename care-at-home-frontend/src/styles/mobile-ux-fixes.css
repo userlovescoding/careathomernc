@@ -1,0 +1,100 @@
+/* 
+ * MOBILE UX VALIDATION FIXES 
+ * Targeted refinements for real-world healthcare usability.
+ */
+
+/* =========================================
+   1. Thumb-Friendly CTA & Tap Accuracy
+   ========================================= */
+@media (max-width: 768px) {
+  /* Increase all interactive tap targets to minimum 48px */
+  .btn, 
+  .navbar-main button, 
+  .faq-question,
+  .mobile-nav-links a {
+    min-height: 48px;
+    padding: var(--space-3) var(--space-4);
+  }
+
+  /* Optimized Sticky Mobile CTA for Thumb Zone */
+  .sticky-mobile-cta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Prioritize Call & WhatsApp */
+    gap: var(--space-2);
+    padding: var(--space-3);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid var(--clr-border);
+  }
+
+  .btn-sticky-call, .btn-sticky-whatsapp {
+    border-radius: var(--radius-md) !important;
+    font-size: 0.9375rem !important;
+    flex-direction: column; /* Icon above text for easier thumb hitting */
+    height: 56px;
+    gap: 2px !important;
+  }
+}
+
+/* =========================================
+   2. Long Page Scroll Flow (Service Pages)
+   ========================================= */
+@media (max-width: 768px) {
+  /* Reduce excessive vertical padding on mobile to keep user engaged */
+  .section-padding {
+    padding-block: var(--space-10);
+  }
+
+  /* Improved line-length for mobile reading */
+  .text-body, .text-body-large {
+    max-width: 95%;
+    margin-inline: auto;
+  }
+}
+
+/* =========================================
+   3. Mobile Form Input Experience
+   ========================================= */
+@media (max-width: 768px) {
+  /* Prevent iOS auto-zoom on focus by ensuring font-size is at least 16px */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+
+  /* Add spacing between form fields for fat-finger safety */
+  .form-group {
+    margin-bottom: var(--space-5);
+  }
+}
+
+/* =========================================
+   4. FAQ Mobile Readability
+   ========================================= */
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .faq-answer-text {
+    font-size: 0.9375rem;
+    padding-bottom: var(--space-4);
+  }
+}
+
+/* =========================================
+   5. Visual Trust Stability
+   ========================================= */
+/* Prevent layout shift during scroll */
+.navbar-main {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure images don't break container on narrow screens */
+img {
+  max-width: 100%;
+  height: auto;
+}

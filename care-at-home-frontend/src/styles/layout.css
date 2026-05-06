@@ -1,0 +1,33 @@
+/* Container System */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--space-8);
+  }
+}
+
+/* Section Standards */
+.section-padding {
+  padding-block: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-block: var(--space-20);
+  }
+}
+
+.section-bg-alt {
+  background-color: var(--clr-bg-alt);
+}
+
+/* Shared Spacing Classes */
+.stack-sm { display: flex; flex-direction: column; gap: var(--space-2); }
+.stack-md { display: flex; flex-direction: column; gap: var(--space-4); }
+.stack-lg { display: flex; flex-direction: column; gap: var(--space-8); }

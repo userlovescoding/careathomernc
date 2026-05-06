@@ -1,0 +1,107 @@
+.service-areas-section {
+  background-color: var(--clr-bg-main);
+  border-top: 1px solid var(--clr-border);
+}
+
+.service-areas-layout {
+  display: grid;
+  gap: var(--space-12);
+}
+
+@media (min-width: 992px) {
+  .service-areas-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.service-areas-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.areas-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.area-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 1rem;
+  color: var(--clr-text-main);
+  font-weight: 500;
+}
+
+.area-benefit-icon {
+  color: var(--clr-secondary);
+  font-size: 1.25rem;
+}
+
+.service-areas-grid-wrapper {
+  background-color: var(--clr-bg-alt);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (min-width: 480px) {
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.area-tag {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--clr-bg-main);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--clr-primary-dark);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--clr-border);
+}
+
+.area-pin-icon {
+  color: var(--clr-primary);
+}
+
+.area-support-banner {
+  margin-top: var(--space-12);
+  background-color: rgba(15, 76, 129, 0.05); /* Soft Primary */
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .area-support-banner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: var(--space-6) var(--space-8);
+  }
+}
+
+.area-support-text {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--clr-primary-dark);
+}

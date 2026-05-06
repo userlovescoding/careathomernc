@@ -1,0 +1,108 @@
+.how-it-works-section {
+  background-color: var(--clr-bg-main);
+  position: relative;
+}
+
+.how-it-works-header {
+  text-align: center;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-bottom: var(--space-16);
+}
+
+.process-grid {
+  display: grid;
+  gap: var(--space-8);
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Optional connecting line for desktop */
+@media (min-width: 1024px) {
+  .process-grid::before {
+    content: '';
+    position: absolute;
+    top: 32px; /* aligns with step-number center */
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background-color: var(--clr-border);
+    z-index: 0;
+  }
+}
+
+.process-step {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+  background-color: var(--clr-bg-main); /* to cover the line behind it */
+  padding-inline: var(--space-2);
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: var(--clr-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 0 0 0 8px var(--clr-bg-alt);
+  margin-bottom: var(--space-2);
+}
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--clr-primary-dark);
+  line-height: 1.2;
+}
+
+.step-desc {
+  font-size: 0.9375rem;
+  color: var(--clr-text-muted);
+  line-height: 1.6;
+}
+
+.emergency-note {
+  margin-top: var(--space-12);
+  padding: var(--space-6);
+  background-color: rgba(220, 38, 38, 0.05); /* Soft Emergency Red */
+  border: 1px dashed var(--clr-emergency);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.emergency-note-title {
+  color: var(--clr-emergency-dark);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.emergency-note-text {
+  color: var(--clr-text-main);
+  font-size: 0.9375rem;
+}

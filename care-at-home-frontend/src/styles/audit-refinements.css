@@ -1,0 +1,128 @@
+/* 
+ * FINAL UI CONSISTENCY AUDIT 
+ * Enforcing premium healthcare design rules across the application.
+ */
+
+/* =========================================
+   1. Typography Consistency
+   ========================================= */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--clr-primary-dark);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.01em; /* Premium typography feel */
+}
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Enforce readability line-heights */
+.text-body, .text-body-large, .text-small {
+  line-height: 1.65; 
+}
+
+/* =========================================
+   2. Button System & Touch Target Consistency
+   ========================================= */
+.btn {
+  /* Enforce minimum touch target for mobile (48px) */
+  min-height: 48px;
+  /* Uniform typography */
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  /* Uniform transition */
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for professional accessibility */
+.btn:focus-visible {
+  outline: 2px solid var(--clr-secondary);
+  outline-offset: 2px;
+}
+
+/* Ensure secondary action consistency */
+.btn-outline {
+  border-width: 2px;
+}
+
+/* =========================================
+   3. Card System Consistency
+   ========================================= */
+.card, .service-card, .trust-card, .testimonial-card, .faq-item {
+  /* Unify border styles */
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--clr-bg-main);
+  /* Unify base shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+  /* Unify transitions */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Unify hover behavior across all interactive cards */
+a .card:hover, .service-card:hover, .trust-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  border-color: rgba(15, 76, 129, 0.3); /* Soft primary tint */
+}
+
+/* =========================================
+   4. Section Spacing Consistency (Fluid)
+   ========================================= */
+.section-padding {
+  /* Fluid padding for consistent breathing room across all devices */
+  padding-block: clamp(3rem, 6vw + 1rem, 6rem);
+}
+
+/* Unify gaps in stacks */
+.stack-sm { gap: var(--space-3); }
+.stack-md { gap: var(--space-6); }
+.stack-lg { gap: var(--space-10); }
+
+/* =========================================
+   5. Color Usage Discipline
+   ========================================= */
+/* Ensure muted text is always accessible */
+.text-muted, .service-desc, .step-desc {
+  color: #475569; /* Slate 600 - High contrast muted */
+}
+
+/* =========================================
+   6. Mobile UI Consistency
+   ========================================= */
+@media (max-width: 768px) {
+  /* Prevent horizontal scrolling universally */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure container padding is consistent on mobile */
+  .container {
+    padding-inline: var(--space-4);
+  }
+
+  /* Unify heading scales on mobile */
+  .heading-section {
+    font-size: 1.75rem;
+  }
+}
+
+/* =========================================
+   7. Footer + Navigation Harmony
+   ========================================= */
+/* Unify structural borders */
+.navbar-main, .layout-header {
+  border-bottom: 1px solid var(--clr-border);
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+}
+
+.footer-main, .layout-footer {
+  border-top: 1px solid var(--clr-border);
+  background-color: var(--clr-bg-alt);
+}

@@ -1,0 +1,55 @@
+/* Sticky Bottom CTA - Mobile Only */
+.sticky-mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--clr-bg-main);
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: flex;
+  padding: var(--space-2) var(--space-3);
+  gap: var(--space-2);
+  /* iOS Safe Area Support */
+  padding-bottom: calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
+  transition: transform 0.3s ease;
+}
+
+/* Hide on Desktop */
+@media (min-width: 769px) {
+  .sticky-mobile-cta {
+    display: none;
+  }
+}
+
+.sticky-action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-2);
+  border-radius: var(--radius-md);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+/* WhatsApp Priority Styling */
+.sticky-action-wa {
+  background-color: var(--clr-secondary);
+  flex: 1.2; /* Slightly wider to emphasize WhatsApp preference */
+}
+
+/* Call Button Styling */
+.sticky-action-call {
+  background-color: var(--clr-primary);
+  flex: 1;
+}
+
+.sticky-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}

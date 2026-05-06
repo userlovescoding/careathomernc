@@ -1,0 +1,39 @@
+:root {
+  /* Color System - Healthcare Theme (Trust, Calm, Premium) */
+  --clr-primary: #0F4C81;       /* Trust Blue - Main Brand Color */
+  --clr-primary-dark: #0A365C;  
+  --clr-secondary: #25D366;     /* WhatsApp/Calm Green */
+  --clr-secondary-dark: #1DA851;
+  --clr-emergency: #DC2626;     /* Urgent Red */
+  --clr-emergency-dark: #B91C1C;
+  
+  --clr-text-main: #1E293B;     /* Slate 800 - High Readability */
+  --clr-text-muted: #64748B;    /* Slate 500 - Support Text */
+  --clr-bg-main: #FFFFFF;
+  --clr-bg-alt: #F8FAFC;        /* Slate 50 - Soft Section Background */
+  --clr-border: #E2E8F0;
+
+  /* Typography System Foundation */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Spacing System (Mobile First base) */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-24: 6rem;    /* 96px */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* Shadows (Soft, non-flashy for trust) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-card: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+}
