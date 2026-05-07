@@ -26,19 +26,19 @@ const ServiceAreasSection = () => {
             
             <div className="areas-benefits-list">
               <div className="area-benefit-item">
-                <span className="area-benefit-icon">?</span>
+                <span className="area-benefit-icon">⚡</span>
                 Quick local deployment
               </div>
               <div className="area-benefit-item">
-                <span className="area-benefit-icon">??</span>
+                <span className="area-benefit-icon">🤝</span>
                 Trusted home healthcare support nearby
               </div>
               <div className="area-benefit-item">
-                <span className="area-benefit-icon">???</span>
+                <span className="area-benefit-icon">🛏️</span>
                 Medical equipment delivery support
               </div>
               <div className="area-benefit-item">
-                <span className="area-benefit-icon">??</span>
+                <span className="area-benefit-icon">🚨</span>
                 Emergency care response readiness
               </div>
             </div>
@@ -49,7 +49,7 @@ const ServiceAreasSection = () => {
             <div className="areas-grid">
               {locations.map((area, index) => (
                 <div key={index} className="area-tag">
-                  <span className="area-pin-icon">??</span>
+                  <span className="area-pin-icon">📍</span>
                   {area}
                 </div>
               ))}
@@ -60,10 +60,10 @@ const ServiceAreasSection = () => {
         {/* Support Banner */}
         <div className="area-support-banner">
           <div className="area-support-text">
-            Don�t see your area listed? Call us � we may still be able to help.
+            Don’t see your area listed? Call us — we may still be able to help.
           </div>
           <button className="btn btn-primary">
-            <span className="icon-placeholder">??</span> Call Us to Confirm
+            <span className="icon-placeholder">📞</span> Call Us to Confirm
           </button>
         </div>
 

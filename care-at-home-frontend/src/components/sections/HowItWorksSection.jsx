@@ -12,7 +12,7 @@ const processSteps = [
     id: 2,
     num: '02',
     title: 'Care Assessment',
-    description: 'Our health experts assess your exact needs—whether it’s nursing, elderly care, ICU setup, or equipment rental.'
+    description: 'Our health experts assess your exact needsâ€”whether itâ€™s nursing, elderly care, ICU setup, or equipment rental.'
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ const HowItWorksSection = () => {
         </div>
 
         <div className="emergency-note">
-          <span className="emergency-note-title">?? Urgent Healthcare Need?</span>
+          <span className="emergency-note-title">ðŸš¨ Urgent Healthcare Need?</span>
           <span className="emergency-note-text">
             For critical ICU setups or emergency medical equipment rentals, we prioritize rapid local deployment. Let us know immediately on call.
           </span>

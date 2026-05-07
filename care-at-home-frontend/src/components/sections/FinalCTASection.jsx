@@ -11,30 +11,30 @@ const FinalCTASection = () => {
             Need Immediate Care Support at Home?
           </h2>
           <p className="final-cta-subhead">
-            Whether you require urgent home nursing, professional elderly care, prompt medical equipment rental, ICU setup, or post-surgery support�we are just one call away.
+            Whether you require urgent home nursing, professional elderly care, prompt medical equipment rental, ICU setup, or post-surgery support—we are just one call away.
           </p>
         </div>
 
         <div className="final-cta-actions">
           <button className="btn btn-primary btn-large">
-            <span className="icon-placeholder">??</span> Call Now
+            <span className="icon-placeholder">📞</span> Call Now
           </button>
           <button className="btn btn-secondary btn-large">
-            <span className="icon-placeholder">??</span> WhatsApp Us
+            <span className="icon-placeholder">💬</span> WhatsApp Us
           </button>
         </div>
 
         <div className="final-cta-reassurance-row">
           <div className="reassurance-item">
-            <span className="reassurance-icon">?</span>
+            <span className="reassurance-icon">⚡</span>
             Fast Local Response
           </div>
           <div className="reassurance-item">
-            <span className="reassurance-icon">?</span>
+            <span className="reassurance-icon">✅</span>
             Same-Day Support Available
           </div>
           <div className="reassurance-item">
-            <span className="reassurance-icon">?</span>
+            <span className="reassurance-icon">⭐</span>
             Trusted Ranchi Healthcare
           </div>
         </div>

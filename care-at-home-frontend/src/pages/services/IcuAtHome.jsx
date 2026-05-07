@@ -33,7 +33,7 @@ const IcuAtHome = () => {
       <section className="service-hero section-padding" style={{ backgroundColor: 'var(--clr-bg-alt)' }}>
         <div className="container">
           <div className="hero-local-badge" style={{ display: 'inline-block', backgroundColor: 'rgba(220, 38, 38, 0.1)', color: 'var(--clr-emergency-dark)', padding: '4px 12px', borderRadius: '50px', fontSize: '0.875rem', fontWeight: '600', marginBottom: '1rem' }}>
-            ?? Fast Critical Care Deployment in Ranchi
+            🚨 Fast Critical Care Deployment in Ranchi
           </div>
           <h1 className="heading-hero" style={{ color: 'var(--clr-primary-dark)', marginBottom: '1rem' }}>
             ICU at Home Services in Ranchi
@@ -43,10 +43,10 @@ const IcuAtHome = () => {
           </p>
           <div className="hero-actions" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <button className="btn btn-emergency">
-              <span className="icon-placeholder">??</span> Call Now for Urgent Setup
+              <span className="icon-placeholder">📞</span> Call Now for Urgent Setup
             </button>
             <button className="btn btn-secondary">
-              <span className="icon-placeholder">??</span> WhatsApp Requirements
+              <span className="icon-placeholder">💬</span> WhatsApp Requirements
             </button>
           </div>
         </div>
@@ -65,12 +65,12 @@ const IcuAtHome = () => {
 
             <div className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
               {[
-                { icon: '??', title: 'Oxygen Support', desc: 'Continuous oxygen supply via concentrators or cylinders.' },
-                { icon: '?????', title: 'ICU-Trained Nurses', desc: 'Verified nurses skilled in critical patient monitoring and intervention.' },
-                { icon: '???', title: 'Hospital Bed Setup', desc: 'Fully functional, motorized or manual fowler beds for patient comfort.' },
-                { icon: '??', title: 'Patient Monitoring', desc: 'Multipara monitors to continuously track vitals like ECG, SpO2, and BP.' },
-                { icon: '??', title: 'Suction Machine', desc: 'Professional airway clearance and fluid management support.' },
-                { icon: '??', title: 'Care Coordination', desc: 'Seamless integration with your primary treating physician.' }
+                { icon: '🫁', title: 'Oxygen Support', desc: 'Continuous oxygen supply via concentrators or cylinders.' },
+                { icon: '👩‍⚕️', title: 'ICU-Trained Nurses', desc: 'Verified nurses skilled in critical patient monitoring and intervention.' },
+                { icon: '🛏️', title: 'Hospital Bed Setup', desc: 'Fully functional, motorized or manual fowler beds for patient comfort.' },
+                { icon: '📈', title: 'Patient Monitoring', desc: 'Multipara monitors to continuously track vitals like ECG, SpO2, and BP.' },
+                { icon: '⚕️', title: 'Suction Machine', desc: 'Professional airway clearance and fluid management support.' },
+                { icon: '🤝', title: 'Care Coordination', desc: 'Seamless integration with your primary treating physician.' }
               ].map((feature, idx) => (
                 <div key={idx} className="card card-service" style={{ padding: '1.5rem', backgroundColor: 'var(--clr-bg-alt)', border: 'none' }}>
                   <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{feature.icon}</div>
@@ -92,7 +92,7 @@ const IcuAtHome = () => {
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {['Post-ICU discharge patients', 'Oxygen-dependent patients', 'Stroke recovery & neurological patients', 'Advanced post-surgery recovery', 'Serious elderly care cases requiring continuous monitoring'].map((item, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', fontSize: '1.0625rem', color: 'var(--clr-text-main)', fontWeight: '500' }}>
-                    <span style={{ color: 'var(--clr-primary)' }}>?</span> {item}
+                    <span style={{ color: 'var(--clr-primary)' }}>✅</span> {item}
                   </li>
                 ))}
               </ul>
@@ -104,15 +104,15 @@ const IcuAtHome = () => {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                  <div style={{ padding: '0.5rem', backgroundColor: 'rgba(15, 76, 129, 0.1)', borderRadius: '50%' }}>???</div>
+                  <div style={{ padding: '0.5rem', backgroundColor: 'rgba(15, 76, 129, 0.1)', borderRadius: '50%' }}>👨‍⚕️</div>
                   <span style={{ fontWeight: '600', color: 'var(--clr-primary-dark)' }}>Verified ICU Support Staff</span>
                 </div>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                  <div style={{ padding: '0.5rem', backgroundColor: 'rgba(15, 76, 129, 0.1)', borderRadius: '50%' }}>?</div>
+                  <div style={{ padding: '0.5rem', backgroundColor: 'rgba(15, 76, 129, 0.1)', borderRadius: '50%' }}>📍</div>
                   <span style={{ fontWeight: '600', color: 'var(--clr-primary-dark)' }}>Trusted Local Response</span>
                 </div>
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                  <div style={{ padding: '0.5rem', backgroundColor: 'rgba(15, 76, 129, 0.1)', borderRadius: '50%' }}>??</div>
+                  <div style={{ padding: '0.5rem', backgroundColor: 'rgba(15, 76, 129, 0.1)', borderRadius: '50%' }}>⭐</div>
                   <span style={{ fontWeight: '600', color: 'var(--clr-primary-dark)' }}>Professional Clinical Care</span>
                 </div>
               </div>
@@ -127,7 +127,7 @@ const IcuAtHome = () => {
           <h2 className="heading-section" style={{ textAlign: 'center', marginBottom: '3rem' }}>How ICU Setup Works</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
             {[
-              { step: '01', title: 'Urgent Consultation', desc: 'Call us to share the patient�s medical summary and immediate needs.' },
+              { step: '01', title: 'Urgent Consultation', desc: 'Call us to share the patient’s medical summary and immediate needs.' },
               { step: '02', title: 'Medical Assessment', desc: 'We coordinate with doctors to finalize the required equipment and staff.' },
               { step: '03', title: 'Equipment Setup', desc: 'Rapid local delivery and installation of all medical devices.' },
               { step: '04', title: 'Care Commences', desc: 'ICU-trained nursing staff takes charge of patient monitoring.' }
@@ -178,10 +178,10 @@ const IcuAtHome = () => {
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <button className="btn" style={{ backgroundColor: 'white', color: 'var(--clr-primary-dark)' }}>
-              ?? Call Now
+              📞 Call Now
             </button>
             <button className="btn btn-secondary">
-              ?? WhatsApp Us
+              💬 WhatsApp Us
             </button>
           </div>
         </div>
