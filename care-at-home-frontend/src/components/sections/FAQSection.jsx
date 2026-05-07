@@ -10,7 +10,7 @@ const faqData = [
   {
     id: 2,
     question: 'Are your nurses and patient attendants verified?',
-    answer: 'Yes. All our nursing staff and patient attendants undergo strict background checks and professional skill verification to ensure your family’s safety and well-being.'
+    answer: 'Yes. All our nursing staff and patient attendants undergo strict background checks and professional skill verification to ensure your familyâ€™s safety and well-being.'
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const faqData = [
   {
     id: 8,
     question: 'How do I request a service?',
-    answer: 'It’s simple. Just call us directly or send a message on WhatsApp. Our care coordinators will listen to your requirements and arrange the exact support you need.'
+    answer: 'Itâ€™s simple. Just call us directly or send a message on WhatsApp. Our care coordinators will listen to your requirements and arrange the exact support you need.'
   }
 ];
 
@@ -66,7 +66,7 @@ const FAQSection = () => {
           {faqData.map((faq, index) => (
             <div 
               key={faq.id} 
-              className={aq-item }
+              className={`faq-item ${activeIndex === index ? 'active' : ''}`}
             >
               <button 
                 className="faq-question" 
@@ -74,7 +74,7 @@ const FAQSection = () => {
                 aria-expanded={activeIndex === index}
               >
                 {faq.question}
-                <span className="faq-icon">+</span>
+                <span className="faq-icon">{activeIndex === index ? '-' : '+'}</span>
               </button>
               <div className="faq-answer">
                 <div className="faq-answer-text">
@@ -88,7 +88,7 @@ const FAQSection = () => {
         <div className="faq-cta-banner">
           <span className="faq-cta-text">Still have questions about our services?</span>
           <button className="btn btn-primary">
-            <span className="icon-placeholder">??</span> Call Us Directly
+            <span className="icon-placeholder">ðŸ“ž</span> Call Us Directly
           </button>
         </div>
 

@@ -2,10 +2,10 @@ import React from 'react';
 import './MedicalEquipmentRental.css';
 
 const equipmentList = [
-  { id: 1, name: 'Oxygen Concentrator (5L)', icon: '??' },
-  { id: 2, name: 'Hospital Bed (Manual)', icon: '???' },
-  { id: 3, name: 'Wheelchair', icon: '?????' },
-  { id: 4, name: 'Oxygen Cylinder', icon: '???' }
+  { id: 1, name: 'Oxygen Concentrator (5L)', icon: '💨' },
+  { id: 2, name: 'Hospital Bed (Manual)', icon: '🛏️' },
+  { id: 3, name: 'Wheelchair', icon: '🦽' },
+  { id: 4, name: 'Oxygen Cylinder', icon: '⚗️' }
 ];
 
 const suitabilityList = [
@@ -57,17 +57,17 @@ const MedicalEquipmentRental = () => {
       {/* 1. Hero Section */}
       <section className="service-page-hero">
         <div className="container">
-          <div className="hero-local-badge">?? Fast Local Delivery in Ranchi</div>
+          <div className="hero-local-badge">📍 Fast Local Delivery in Ranchi</div>
           <h1 className="heading-hero">Medical Equipment on Rent in Ranchi</h1>
           <p className="text-body-large">
             Reliable home delivery of essential medical equipment for post-discharge care and patient support. Get what you need, when you need it.
           </p>
           <div className="hero-actions" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
             <button className="btn" style={{ backgroundColor: 'white', color: 'var(--clr-primary-dark)' }}>
-              <span className="icon-placeholder">??</span> Call Now
+              <span className="icon-placeholder">📞</span> Call Now
             </button>
             <button className="btn btn-secondary">
-              <span className="icon-placeholder">??</span> WhatsApp Us
+              <span className="icon-placeholder">💬</span> WhatsApp Us
             </button>
           </div>
         </div>
@@ -91,7 +91,7 @@ const MedicalEquipmentRental = () => {
         </div>
       </section>
 
-      {/* 3 & 4. Suitability and Benefits (Why Choose Us) */}
+      {/* 3 & 4. Suitability and Benefits */}
       <section className="section-padding section-bg-alt">
         <div className="container" style={{ display: 'grid', gap: '3rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
           
@@ -100,7 +100,7 @@ const MedicalEquipmentRental = () => {
             <div className="features-list" style={{ gridTemplateColumns: '1fr' }}>
               {suitabilityList.map((item, index) => (
                 <div key={index} className="feature-list-item">
-                  <span className="feature-list-icon">?</span> {item}
+                  <span className="feature-list-icon">✅</span> {item}
                 </div>
               ))}
             </div>
@@ -111,7 +111,7 @@ const MedicalEquipmentRental = () => {
             <div className="features-list" style={{ gridTemplateColumns: '1fr' }}>
               {benefitsList.map((item, index) => (
                 <div key={index} className="feature-list-item">
-                  <span className="feature-list-icon">???</span> {item}
+                  <span className="feature-list-icon">⭐</span> {item}
                 </div>
               ))}
             </div>
@@ -165,10 +165,10 @@ const MedicalEquipmentRental = () => {
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button className="btn btn-primary btn-large">
-              <span className="icon-placeholder">??</span> Call Now
+              <span className="icon-placeholder">📞</span> Call Now
             </button>
             <button className="btn btn-secondary btn-large">
-              <span className="icon-placeholder">??</span> WhatsApp Us
+              <span className="icon-placeholder">💬</span> WhatsApp Us
             </button>
           </div>
         </div>

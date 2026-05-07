@@ -1,12 +1,5 @@
 /* Care At Home - Global Design System */
 
-/* Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* Design Tokens */
 @import './variables.css';
 
@@ -23,3 +16,10 @@
 
 /* Applied via Task 8.3: Mobile UX Testing & Usability Validation */
 @import './mobile-ux-fixes.css';
+
+/* Reset (MUST be placed after all @import statements) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

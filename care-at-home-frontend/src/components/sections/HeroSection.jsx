@@ -9,7 +9,7 @@ const HeroSection = () => {
         {/* Left Column: Content & Trust */}
         <div className="hero-content">
           <div className="hero-local-badge">
-            ?? Fast Local Deployment in Ranchi
+            📍 Fast Local Deployment in Ranchi
           </div>
           
           <h1 className="heading-hero">
@@ -22,28 +22,28 @@ const HeroSection = () => {
           
           <div className="hero-actions">
             <button className="btn btn-primary">
-              <span className="icon-placeholder">??</span> Call Now
+              <span className="icon-placeholder">📞</span> Call Now
             </button>
             <button className="btn btn-secondary">
-              <span className="icon-placeholder">??</span> WhatsApp Us
+              <span className="icon-placeholder">💬</span> WhatsApp Us
             </button>
           </div>
           
           <div className="hero-trust-row">
             <div className="trust-item">
-              <span className="trust-item-icon">?</span>
+              <span className="trust-item-icon">⭐</span>
               <span className="trust-item-text">10+ Years<br/>Experience</span>
             </div>
             <div className="trust-item">
-              <span className="trust-item-icon">?</span>
+              <span className="trust-item-icon">🛡️</span>
               <span className="trust-item-text">Verified<br/>Care Staff</span>
             </div>
             <div className="trust-item">
-              <span className="trust-item-icon">?</span>
+              <span className="trust-item-icon">⚡</span>
               <span className="trust-item-text">Fast Local<br/>Support</span>
             </div>
             <div className="trust-item">
-              <span className="trust-item-icon">?</span>
+              <span className="trust-item-icon">🤝</span>
               <span className="trust-item-text">Trusted by<br/>Ranchi Families</span>
             </div>
           </div>
