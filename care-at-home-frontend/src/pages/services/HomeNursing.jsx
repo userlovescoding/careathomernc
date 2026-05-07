@@ -36,7 +36,7 @@ const HomeNursing = () => {
         <div className="container">
           <div className="service-page-hero-content">
             <div className="hero-local-badge" style={{ backgroundColor: 'white' }}>
-              ?? Trusted Home Healthcare in Ranchi
+              📍 Trusted Home Healthcare in Ranchi
             </div>
             <h1 className="heading-hero">Home Nursing Services in Ranchi</h1>
             <p className="text-body-large">
@@ -44,10 +44,10 @@ const HomeNursing = () => {
             </p>
             <div className="service-hero-actions">
               <button className="btn btn-primary">
-                <span className="icon-placeholder">??</span> Call Now
+                <span className="icon-placeholder">📞</span> Call Now
               </button>
               <button className="btn btn-secondary">
-                <span className="icon-placeholder">??</span> WhatsApp Us
+                <span className="icon-placeholder">💬</span> WhatsApp Us
               </button>
             </div>
           </div>
@@ -75,7 +75,7 @@ const HomeNursing = () => {
             ].map((feature, index) => (
               <div key={index} className="service-feature-card">
                 <h3 className="service-feature-title">
-                  <span className="icon-placeholder">??</span> {feature.title}
+                  <span className="icon-placeholder">✔</span> {feature.title}
                 </h3>
                 <p className="service-feature-text">{feature.text}</p>
               </div>
@@ -93,19 +93,19 @@ const HomeNursing = () => {
               <h2 className="heading-section">Who Needs This Service?</h2>
               <ul className="service-check-list">
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> Patients in post-surgery recovery
+                  <span className="service-check-icon">✔</span> Patients in post-surgery recovery
                 </li>
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> Seniors requiring elderly care support
+                  <span className="service-check-icon">✔</span> Seniors requiring elderly care support
                 </li>
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> Individuals on recent hospital discharge
+                  <span className="service-check-icon">✔</span> Individuals on recent hospital discharge
                 </li>
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> Patients managing chronic illnesses
+                  <span className="service-check-icon">✔</span> Patients managing chronic illnesses
                 </li>
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> Families seeking long-term nursing support
+                  <span className="service-check-icon">✔</span> Families seeking long-term nursing support
                 </li>
               </ul>
             </div>
@@ -114,16 +114,16 @@ const HomeNursing = () => {
               <h2 className="heading-section">Why Choose Care At Home?</h2>
               <ul className="service-check-list">
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> <strong>Verified Professionals:</strong> Background-checked and highly trained.
+                  <span className="service-check-icon">⭐</span> <strong>Verified Professionals:</strong> Background-checked and highly trained.
                 </li>
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> <strong>Fast Local Support:</strong> Quick deployment across Ranchi.
+                  <span className="service-check-icon">⚡</span> <strong>Fast Local Support:</strong> Quick deployment across Ranchi.
                 </li>
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> <strong>Faster Recovery:</strong> Healing in the comfort of your own home.
+                  <span className="service-check-icon">🏡</span> <strong>Faster Recovery:</strong> Healing in the comfort of your own home.
                 </li>
                 <li className="service-check-item">
-                  <span className="service-check-icon">?</span> <strong>Seamless Replacement:</strong> Zero disruption in care if a nurse takes leave.
+                  <span className="service-check-icon">🛡️</span> <strong>Seamless Replacement:</strong> Zero disruption in care if a nurse takes leave.
                 </li>
               </ul>
             </div>
@@ -163,14 +163,16 @@ const HomeNursing = () => {
           <h2 className="heading-section text-center" style={{ marginBottom: 'var(--space-8)' }}>Home Nursing FAQs</h2>
           <div className="faq-container">
             {faqs.map((faq, index) => (
-              <div key={index} className={aq-item }>
+              <div key={index} className="faq-item">
                 <button className="faq-question" onClick={() => toggleFaq(index)}>
                   {faq.question}
-                  <span className="faq-icon">+</span>
+                  <span className="faq-icon">{activeFaq === index ? '-' : '+'}</span>
                 </button>
-                <div className="faq-answer">
-                  <div className="faq-answer-text">{faq.answer}</div>
-                </div>
+                {activeFaq === index && (
+                  <div className="faq-answer">
+                    <div className="faq-answer-text" style={{ padding: '1rem 0' }}>{faq.answer}</div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -188,10 +190,10 @@ const HomeNursing = () => {
           </p>
           <div className="service-hero-actions">
             <button className="btn" style={{ backgroundColor: 'white', color: 'var(--clr-primary-dark)' }}>
-              <span className="icon-placeholder">??</span> Call Now
+              <span className="icon-placeholder">📞</span> Call Now
             </button>
             <button className="btn btn-secondary">
-              <span className="icon-placeholder">??</span> WhatsApp Us
+              <span className="icon-placeholder">💬</span> WhatsApp Us
             </button>
           </div>
         </div>

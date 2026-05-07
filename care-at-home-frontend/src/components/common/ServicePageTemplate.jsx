@@ -35,15 +35,15 @@ const ServicePageTemplate = ({ serviceData }) => {
           
           <div className="service-hero-actions">
             <button className="btn btn-primary btn-large">
-              <span className="icon-placeholder">??</span> Call Now
+              <span className="icon-placeholder">📞</span> Call Now
             </button>
             <button className="btn btn-secondary btn-large">
-              <span className="icon-placeholder">??</span> WhatsApp Us
+              <span className="icon-placeholder">💬</span> WhatsApp Us
             </button>
           </div>
           
           <div className="service-hero-trust">
-            <span className="icon-placeholder">?</span> Fast Local Response in Ranchi
+            <span className="icon-placeholder">⚡</span> Fast Local Response in Ranchi
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ const ServicePageTemplate = ({ serviceData }) => {
             <ul className="overview-list">
               {serviceData.overview.useCases.map((useCase, idx) => (
                 <li key={idx}>
-                  <span className="overview-list-icon">?</span>
+                  <span className="overview-list-icon">✔</span>
                   <span>{useCase}</span>
                 </li>
               ))}
@@ -134,7 +134,7 @@ const ServicePageTemplate = ({ serviceData }) => {
           </div>
           <div className="faq-wrapper">
             {serviceData.faqs.map((faq, idx) => (
-              <div key={idx} className={aq-item \} style={{ backgroundColor: 'var(--clr-bg-alt)', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-md)', overflow: 'hidden' }}>
+              <div key={idx} className="faq-item" style={{ backgroundColor: 'var(--clr-bg-alt)', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-md)', overflow: 'hidden', marginBottom: '1rem' }}>
                 <button 
                   style={{ width: '100%', textAlign: 'left', padding: 'var(--space-4)', background: 'none', border: 'none', display: 'flex', justifyContent: 'space-between', fontWeight: '600', cursor: 'pointer', color: 'var(--clr-primary-dark)' }}
                   onClick={() => toggleFaq(idx)}
@@ -158,14 +158,14 @@ const ServicePageTemplate = ({ serviceData }) => {
       {/* 8. Final CTA Section */}
       <section className="service-final-cta">
         <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--space-6)' }}>
-          <h2 className="heading-section" style={{ color: 'white' }}>{serviceData.cta.headline}</h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '600px' }}>{serviceData.cta.subheadline}</p>
+          <h2 className="heading-section" style={{ color: 'white', textAlign: 'center' }}>{serviceData.cta.headline}</h2>
+          <p style={{ color: 'rgba(255,255,255,0.9)', maxWidth: '600px', textAlign: 'center' }}>{serviceData.cta.subheadline}</p>
           <div className="service-hero-actions">
             <button className="btn" style={{ backgroundColor: 'white', color: 'var(--clr-primary-dark)', fontWeight: 'bold' }}>
-              <span className="icon-placeholder">??</span> Call Now
+              <span className="icon-placeholder">📞</span> Call Now
             </button>
             <button className="btn btn-secondary">
-              <span className="icon-placeholder">??</span> WhatsApp Us
+              <span className="icon-placeholder">💬</span> WhatsApp Us
             </button>
           </div>
         </div>
